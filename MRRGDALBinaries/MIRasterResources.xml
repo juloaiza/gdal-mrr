@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RasterSDK>
+  <RasterVersion>1.0</RasterVersion>
+  <StringResources>
+	<stringResource key="1000" value="Visible"/>
+	<stringResource key="1001" value="Invisible"/>
+	<stringResource key="1002" value="Fringe"/>
+  <stringResource key="1003" value="True"/>
+  <stringResource key="1004" value="False"/>
+  <stringResource key="1005" value="Null"/>
+  <stringResource key="1006" value="Off Raster"/>
+  <stringResource key="1007" value="point"/>
+  <stringResource key="1008" value="lines"/>
+  <stringResource key="1009" value="region"/>
+  <stringResource key="1010" value="No Cell"/>
+  <stringResource key="1011" value="Invalid"/>
+  <stringResource key="1012" value="Visible"/>
+  <stringResource key="1013" value="Distance"/>
+  <stringResource key="1014" value="OffsetRequired"/>
+  <stringResource key="1015" value="NumVisible"/>
+  </StringResources>
+
+  <ErrorMsgs>
+    <ErrorMsg key="20000" value="An unknown error has occurred."/>
+    <ErrorMsg key="20001" value="Invalid arguments were passed."/>
+    <ErrorMsg key="20002" value="Null arguments passed."/>
+    <ErrorMsg key="20003" value="The operation was canceled."/>
+    <ErrorMsg key="20005" value="An error occurred accessing the table."/>
+    <ErrorMsg key="20006" value="To activate this feature you require a MapInfo Pro Advanced license."/>
+    <ErrorMsg key="20007" value="An invalid handle has been provided."/>
+    <ErrorMsg key="20008" value="An invalid event index has been passed."/>
+    <ErrorMsg key="20009" value="An invalid field index has been passed."/>
+    <ErrorMsg key="20010" value="An invalid band index has been passed."/>
+    <ErrorMsg key="20011" value="An invalid info handle has been passed."/>
+    <ErrorMsg key="20012" value="An invalid iterator handle has been passed."/>
+    <ErrorMsg key="20013" value="An invalid metadata key has been specified."/>
+    <ErrorMsg key="20015" value="Not yet implemented."/>
+    <ErrorMsg key="20016" value="Not a supported operation."/>
+    <ErrorMsg key="20017" value="An invalid interpolator handle has been passed."/>
+    <ErrorMsg key="20018" value="An invalid table record index has been passed."/>
+    <ErrorMsg key="20019" value="An invalid tracker handle has been passed."/>
+    <ErrorMsg key="20020" value="Data type is not supported."/>
+    <ErrorMsg key="20021" value="An invalid level index has been provided."/>
+    <ErrorMsg key="20022" value="Input raster's unit code is not defined."/>
+    <ErrorMsg key="20023" value="Field information is not available."/>
+    <ErrorMsg key="20024" value="Event information is not available."/>
+    <ErrorMsg key="20025" value="Level information is not available."/>
+    <ErrorMsg key="20026" value="Band information is not available."/>
+    <ErrorMsg key="20027" value="Statistics information is not available."/>
+    <ErrorMsg key="20028" value="Raster information is not available."/>
+    <ErrorMsg key="20029" value="Invalid input table."/>
+    <ErrorMsg key="20030" value="Unable to acquire raster handle."/>
+    <ErrorMsg key="20031" value="Raster cache is unavailable."/>
+    <ErrorMsg key="20032" value="Unable to match raster information."/>
+    <ErrorMsg key="20033" value="Invalid stream."/>
+    <ErrorMsg key="20034" value="Unable to open stream."/>
+    <ErrorMsg key="20035" value="Statistics failure."/>
+    <ErrorMsg key="20036" value="Event is unavailable."/>
+    <ErrorMsg key="20037" value="An invalid compression method has been provided."/>
+    <ErrorMsg key="20038" value="Unable to open raster stream."/>
+    <ErrorMsg key="20039" value="Unable to initialize empty raster on disk."/>
+    <ErrorMsg key="20040" value="Raster is not readable."/>
+    <ErrorMsg key="20041" value="Raster is not writeable."/>
+    <ErrorMsg key="20042" value="The edit cell operation is not supported."/>
+    <ErrorMsg key="20043" value="The create operation is not supported."/>
+    <ErrorMsg key="20045" value="The edit cell operation is not supported for rasters stored in a ZIP archive."/>
+    <ErrorMsg key="20046" value="The create operation is not supported for rasters stored in a ZIP archive."/>
+    <ErrorMsg key="20047" value="The raster is currently open. No concurrent access is allowed."/>
+    <ErrorMsg key="20048" value="Unable to retrieve resolution range for the raster file."/>
+    <ErrorMsg key="20049" value="Failure while creating interpolator."/>
+    <ErrorMsg key="20050" value="Invalid cell size."/>
+    <ErrorMsg key="20051" value="Unable to set classification table record."/>
+    <ErrorMsg key="20052" value="Unable to set classification table field."/>
+    <ErrorMsg key="20053" value="Coordinate system is unavailable."/>
+    <ErrorMsg key="20055" value="No raster tile found."/>
+    <ErrorMsg key="20056" value="Failed to release resource."/>
+    <ErrorMsg key="20057" value="Vector field type is not supported by this operation."/>
+    <ErrorMsg key="20058" value="Invalid vector field index."/>
+    <ErrorMsg key="20059" value="No supported vector feature found."/>
+    <ErrorMsg key="20060" value="Location provided is outside the raster extents."/>
+    <ErrorMsg key="20061" value="Invalid finalization option."/>
+    <ErrorMsg key="20062" value="Invalid arguments. Specify a valid log file path and log file size."/>
+    <ErrorMsg key="20063" value="An edit operation has been attempted on a raster that is not editable."/>
+    <ErrorMsg key="20064" value="An edit operation has been attempted on a raster that does not support the capability."/>
+    <ErrorMsg key="20065" value="An edit operation failed."/>
+    <ErrorMsg key="20066" value="Invalid Field and Band filter for current operation."/>
+    <ErrorMsg key="20067" value="RGB field not found."/>
+    <ErrorMsg key="20068" value="Classification table not found at the given field index."/>
+    <ErrorMsg key="20069" value="An edit operation has been attempted on a raster or ZIP file that is not editable."/>
+    <ErrorMsg key="20070" value="Multi-resolution output is not supported by selected output driver."/>
+    <ErrorMsg key="20071" value="Editing the raster property is not supported."/>
+    <ErrorMsg key="20072" value="Invalid property value."/>
+    <ErrorMsg key="20073" value="No property found to edit."/>
+    <ErrorMsg key="20074" value="Class Value field not found in class table."/>
+    <ErrorMsg key="20075" value="The raster has an unsupported forward version number. Some features of the raster may not be loadable."/>
+    <ErrorMsg key="20076" value="Class Label field not found in class table."/>
+    <ErrorMsg key="20077" value="Class ID field not found in class table."/>
+
+    <ErrorMsg key="20100" value="File is not open."/>
+    <ErrorMsg key="20101" value="Unable to open file."/>
+    <ErrorMsg key="20102" value="File name is empty."/>
+    <ErrorMsg key="20103" value="Unable to read file."/>
+    <ErrorMsg key="20104" value="Invalid file extension."/>
+    <ErrorMsg key="20105" value="Absolute path error."/>
+    <ErrorMsg key="20106" value="Unable to verify file."/>
+    <ErrorMsg key="20107" value="Unable to create file."/>
+    <ErrorMsg key="20108" value="Unable to read structure."/>
+    <ErrorMsg key="20109" value="Unable to write structure."/>
+    <ErrorMsg key="20110" value="Unable to validate structure."/>
+    <ErrorMsg key="20111" value="Version not supported."/>
+    <ErrorMsg key="20112" value="Unable to define dataset."/>
+    <ErrorMsg key="20113" value="Invalid driver found."/>
+    <ErrorMsg key="20114" value="Unable to support ZIP file format."/>
+    <ErrorMsg key="20115" value="Unable to extract file name from the given file."/>
+    <ErrorMsg key="20116" value="Invalid access mode passed while opening a file."/>
+    <ErrorMsg key="20117" value="The file is not present or the user does not have access permission."/>
+    <ErrorMsg key="20118" value="Invalid color file format."/>
+    <ErrorMsg key="20119" value="File does not exist."/>
+    <ErrorMsg key="20120" value="Unable to write file"/>
+    <ErrorMsg key="20121" value="Invalid vector file."/>
+    <ErrorMsg key="20122" value="Band type not supported by driver."/>
+    <ErrorMsg key="20123" value="An invalid delimiter (like '.') has been provided."/>
+    <ErrorMsg key="20124" value="Output file already exists."/>
+    <ErrorMsg key="20125" value="Directory is not writeable."/>
+    <ErrorMsg key="20126" value="The output file has exceeded the maximum number of rows or columns allowed for this raster format."/>
+    <ErrorMsg key="20128" value="Input and output file names are same."/>
+    <ErrorMsg key="20129" value="Raster format does not support multiple bands."/>
+
+
+    <ErrorMsg key="20200" value="Unable to start iterator."/>
+    <ErrorMsg key="20201" value="Unable to start interpolator."/>
+    <ErrorMsg key="20202" value="Failed to set Random Block."/>
+    <ErrorMsg key="20203" value="Failed to get Random Block."/>
+    <ErrorMsg key="20204" value="Failed to interpolate data block."/>
+    <ErrorMsg key="20300" value="Unable to allocate memory."/>
+    <ErrorMsg key="20301" value="Unable to release memory."/>
+    <ErrorMsg key="20302" value="TPIP error, failed to allocate memory."/>
+    <ErrorMsg key="20350" value="Unable to re-open stream due to incompatible flags."/>
+    <ErrorMsg key="20351" value="Unable to read file cluster chain."/>
+    <ErrorMsg key="20352" value="Unable to read zero file size."/>
+    <ErrorMsg key="20353" value="Unable to open stream."/>
+    <ErrorMsg key="20354" value="XCFS is not open for modification."/>
+    <ErrorMsg key="20355" value="Stream does not allow modification."/>
+    <ErrorMsg key="20356" value="Stream is being accessed exclusively."/>
+    <ErrorMsg key="20357" value="Unable to find XCFS file length."/>
+    <ErrorMsg key="20358" value="Unable to open file table system stream."/>
+    <ErrorMsg key="20359" value="Unable to open empty open cluster stream."/>
+    <ErrorMsg key="20360" value="Unable to open file index server system stream."/>
+    <ErrorMsg key="20361" value="Unable to close XCFS file."/>
+    <ErrorMsg key="20362" value="Unable.to open XCFS file."/>
+    <ErrorMsg key="20363" value="XCFS zero stream length."/>
+    <ErrorMsg key="20364" value="Unable to read root cluster."/>
+    <ErrorMsg key="20365" value="Unable to commit XCFS file."/>
+    <ErrorMsg key="20366" value="Unable to commit a file."/>
+    <ErrorMsg key="20367" value="Unable to commit file index server system stream."/>
+    <ErrorMsg key="20368" value="Unable to commit empty cluster system stream."/>
+    <ErrorMsg key="20369" value="Unable to commit file table system stream."/>
+    <ErrorMsg key="20370" value="Unable to commit XCFS root."/>
+    <ErrorMsg key="20371" value="Memory allocation failure. Could not create a process tracker object."/>
+    <ErrorMsg key="20372" value="Raster has been closed."/>
+    <ErrorMsg key="20373" value="Could not close the raster."/>
+
+
+    <ErrorMsg key="20550" value="EPSG code matching MapInfo projection string not found."/>
+    <ErrorMsg key="20551" value="Failed to write color file."/>
+    <ErrorMsg key="20552" value="Failed to read color file."/>
+    <ErrorMsg key="20553" value="Failed to read configuration file."/>
+    <ErrorMsg key="20554" value="Failed to find color palette directory."/>
+    <ErrorMsg key="20555" value="Failed to write legend file."/>
+    <ErrorMsg key="20556" value="There is no inflection data for this raster."/>
+    <ErrorMsg key="20557" value="There is no GHX file for this Raster."/>
+    <ErrorMsg key="20558" value="Failed to read the GHX file."/>
+
+    <ErrorMsg key="30001" value="The selected projection/reprojection combination is not valid for this data."/>
+    <ErrorMsg key="30002" value="No overlap found between raster and clip extent."/>
+    <ErrorMsg key="30003" value="Conversion between given Raster combination is not supported."/>
+    <ErrorMsg key="30004" value="Input rasters are not compatible for merge operation."/>
+    <ErrorMsg key="30005" value="No overlap found between merge rectangle and the union of input rasters' bound."/>
+    <ErrorMsg key="30006" value="Invalid expression."/>
+    <ErrorMsg key="30007" value="An error has occurred during contouring."/>
+    <ErrorMsg key="30008" value="An error has occurred during polygonising."/>
+    <ErrorMsg key="30009" value="Incompatible foreground value type specified."/>
+    <ErrorMsg key="30010" value="Unable to open input file for contouring."/>
+    <ErrorMsg key="30011" value="The minimum contour value is greater than the maximum contour value."/>
+    <ErrorMsg key="30012" value="Zero contours have been generated, output file will not be created."/>
+    <ErrorMsg key="30013" value="Level Type is set to manual but no manual levels have been provided."/>
+    <ErrorMsg key="30014" value="Specified input Field does not exist."/>
+    <ErrorMsg key="30015" value="Specified input Band does not exist."/>
+    <ErrorMsg key="30016" value="Verify input file failure."/>
+    <ErrorMsg key="30017" value="The output grid file folder does not exist."/>
+    <ErrorMsg key="30018" value="Failed to open raster."/>
+    <ErrorMsg key="30019" value="Failed to acquire raster statistics."/>
+    <ErrorMsg key="30020" value="Input raster tile iteration failed."/>
+    <ErrorMsg key="30021" value="TAB output failure."/>
+    <ErrorMsg key="30022" value="Seamless TAB output failure."/>
+    <ErrorMsg key="30023" value="The viewshed complex calculation option is not supported for multi-tile rasters."/>
+    <ErrorMsg key="30024" value="Contour spacing cannot be a negative value."/>
+    <ErrorMsg key="30025" value="Contour line style pattern cannot be set to PAT_NONE or a negative value."/>
+    <ErrorMsg key="30026" value="Cell count to contour is zero."/>
+    <ErrorMsg key="30027" value="Number of manual levels is greater than zero but the manual level array has not been initialized."/>
+    <ErrorMsg key="30028" value="Major step cannot be a negative value."/>
+    <ErrorMsg key="30029" value="Contour brush style pattern cannot be set to a negative value."/>
+    <ErrorMsg key="30030" value="Minimum defined contour area cannot be negative."/>
+    <ErrorMsg key="30031" value="The output file already exists and is currently open in another process. It cannot be written to."/>
+    <ErrorMsg key="30032" value="The output volume has insufficient storage space."/>
+    <ErrorMsg key="30033" value="The output volume may run out of storage space."/>
+    <ErrorMsg key="30034" value="The output volume is read-only."/>
+    <ErrorMsg key="30035" value="TPIP processing failed."/>
+    <ErrorMsg key="30036" value="Failed to process input kernel file."/>
+    <ErrorMsg key="30037" value="Classified raster output is not supported for the specified parameters."/>
+    <ErrorMsg key="30038" value="Field type is not valid, only Continuous fields allowed."/>
+    <ErrorMsg key="30039" value="Field type is not valid, only Continuous and Classified fields allowed."/>
+    <ErrorMsg key="30040" value="Field type is not valid, only Continuous, Classified and Image fields allowed."/>
+    <ErrorMsg key="30041" value="Field type is not valid, only Continuous, Classified, Image and Image Palette fields allowed."/>
+    <ErrorMsg key="30042" value="Input raster can not be re-projected, no coordinate system found in input raster."/>
+    <ErrorMsg key="30043" value="A duplicate contour level has been found, please remove any duplicated levels."/>
+    <ErrorMsg key="30044" value="Viewshed origin is not over a valid cell, so height cannot be determined."/>
+    <ErrorMsg key="30045" value="No supported geometry found to rasterize."/>
+    <ErrorMsg key="30046" value="Contour line width can only be set to 0 if line style pattern is set to PAT_HOLLOW."/>
+    <ErrorMsg key="30047" value="Input file is not a valid exported file. Please add the standard header before proceeding."/>
+    <ErrorMsg key="30048" value="Input file is not a valid exported file. Please add the standard header version before proceeding."/>
+    <ErrorMsg key="30049" value="Input file does not have valid rows and columns in header."/>
+    <ErrorMsg key="30050" value="Multi-field Support is not enabled for this operation."/>
+    <ErrorMsg key="30051" value="Contouring is experiencing low memory. Adjust parameters and try again."/>
+    <ErrorMsg key="30052" value="Selected Driver doesn't provide Multi-field Support to Import."/>
+    <ErrorMsg key="30053" value="Selected Driver doesn't provide Multi-band Support to Import."/>
+    <ErrorMsg key="30054" value="Sub-region size is too small, increase the sub-region size."/>
+    <ErrorMsg key="30055" value="Selected driver does not provide Multi-field support for output."/>
+    <ErrorMsg key="30056" value="Selected driver does not provide Multi-band support to output."/>
+    <ErrorMsg key="30057" value="All fields must be of the same type in primary source raster."/>
+    <ErrorMsg key="30058" value="Field Cell size must match for all input rasters selected."/>
+    <ErrorMsg key="30059" value="Field type must match for all input rasters selected."/>
+    <ErrorMsg key="30060" value="Field Origin must match for all input rasters selected."/>
+    <ErrorMsg key="30061" value="Projection must match for all rasters selected for field\band."/>
+    <ErrorMsg key="30063" value="Field type is not allowed by the driver."/>
+    <ErrorMsg key="30064" value="Multiple non-continuous fields are not allowed in the same field."/>
+    <ErrorMsg key="30065" value="Viewshed radius must be greater than or equal to cell size."/>
+    <ErrorMsg key="30066" value="Viewpoint height must be positive."/>
+    <ErrorMsg key="30067" value="Invalid sweep angle/azimuth parameters"/>
+    <ErrorMsg key="30068" value="Invalid viewshed filter size."/>
+    <ErrorMsg key="30069" value="Invalid viewshed classification."/>
+    <ErrorMsg key="30070" value="Invalid viewshed earth curvature."/>
+    <ErrorMsg key="30071" value="Invalid viewshed tower area. Check coordinate systems."/>
+    <ErrorMsg key="30072" value="You cannot mix banded and non-banded notation for the same raster/field in an expression."/>
+    <ErrorMsg key="30073" value="You cannot convert a multi-band continuous raster directly to an image raster. Try using the individual bands."/>
+    <ErrorMsg key="30074" value="You cannot have more calculator expressions than there are bands."/>
+    <ErrorMsg key="30075" value="Filter only supports odd numbers of rows and columns in the kernel."/>
+    <ErrorMsg key="30076" value="The minimum region size for the classified filter is too large."/>
+    <ErrorMsg key="30077" value="Invalid output field type."/>
+    <ErrorMsg key="30078" value="There must either be one expression or one expression for each band."/>
+    <ErrorMsg key="30079" value="Cannot create a classified raster with multiple bands."/>
+
+    <ErrorMsg key="30080" value="Invalid expression: Invalid use of square brackets."/>
+    <ErrorMsg key="30081" value="Invalid expression: The statistics functions cannot be applied to multiple bands."/>
+    <ErrorMsg key="30082" value="Legend not supported for this render style."/>
+    <ErrorMsg key="30083" value="Failed to copy file."/>
+
+    <ErrorMsg key="30101" value="Ellis Initialization failed."/>
+    <ErrorMsg key="30102" value="Failed to set Table Meta Data."/>
+    <ErrorMsg key="30103" value="Failed to Create TAB file."/>
+    <ErrorMsg key="30104" value="Failed to insert object in TAB file."/>
+	  <ErrorMsg key="30105" value="Input Raster's TAB file and Output Vector TAB file are at same location with same Name."/>
+
+
+	  <ErrorMsg key="35001" value="No error occurred."/>
+    <ErrorMsg key="35002" value="An unspecified error occurred."/>
+    <ErrorMsg key="35003" value="The file could not be located."/>
+    <ErrorMsg key="35004" value="All or part of the path is invalid."/>
+    <ErrorMsg key="35005" value="The permitted number of open files was exceeded."/>
+    <ErrorMsg key="35006" value="The file could not be accessed."/>
+    <ErrorMsg key="35007" value="There was an attempt to use an invalid file handle."/>
+    <ErrorMsg key="35008" value="The current working directory cannot be removed."/>
+    <ErrorMsg key="35009" value="There are no more directory entries."/>
+    <ErrorMsg key="35010" value="There was an error trying to set the file pointer."/>
+    <ErrorMsg key="35011" value="There was a hardware error."/>
+    <ErrorMsg key="35012" value="SHARE.EXE was not loaded, or a shared region was locked."/>
+    <ErrorMsg key="35013" value="There was an attempt to lock a region that was already locked."/>
+    <ErrorMsg key="35014" value="The disk is full."/>
+    <ErrorMsg key="35015" value="The end of file was reached."/>
+    <ErrorMsg key="35016" value="Out of memory in spatial analysis: Set the grid cell size manually to a larger value."/>
+    <ErrorMsg key="35017" value="Data pyramid memory allocation failure."/>
+    <ErrorMsg key="35018" value="Mask pyramid memory allocation failure."/>
+    <ErrorMsg key="35019" value="An error has occurred during interpolating a grid."/>
+    <ErrorMsg key="35020" value="The output file is already open in another process."/>
+    <ErrorMsg key="35021" value="Output folder verification failure."/>
+    <ErrorMsg key="35022" value="Source input file verification failure."/>
+    <ErrorMsg key="35023" value="Could not open the ZIP file."/>
+    <ErrorMsg key="35024" value="Could not find item within the ZIP file."/>
+    <ErrorMsg key="35025" value="Error: Band count is zero."/>
+    <ErrorMsg key="35026" value="Temp folder verification failure."/>
+    <ErrorMsg key="35027" value="The output volume has insufficient storage space."/>
+    <ErrorMsg key="35028" value="The output volume may run out of storage space."/>
+    <ErrorMsg key="35029" value="The output volume is read-only."/>
+    <ErrorMsg key="35030" value="Source mask could not be read from file."/>
+    <ErrorMsg key="35031" value="Invalid mathematical operation attempted."/>
+    <ErrorMsg key="35032" value="Estimated memory usage exceeds available physical."/>
+    <ErrorMsg key="35033" value="Export source mask: Failed to open for writing."/>
+    <ErrorMsg key="35034" value="Could not open the raster reader."/>
+    <ErrorMsg key="35035" value="Could not open the raster writer."/>
+    <ErrorMsg key="35036" value="System error trying to allocate patch memory."/>
+    <ErrorMsg key="35037" value="Output header: Failed to open for writing."/>
+    <ErrorMsg key="35038" value="Output BIL: Failed to open for writing."/>
+    <ErrorMsg key="35039" value="Output TAB companion: Failed to open for writing."/>
+    <ErrorMsg key="35040" value="Unmanaged exception. The program has exited in an unmanaged fashion."/>
+    <ErrorMsg key="35041" value="Failed to allocate memory."/>
+    <ErrorMsg key="35042" value="Invalid LAS format header signature, file needs to be of type LASF."/>
+    <ErrorMsg key="35043" value="Invalid TAB format."/>
+    <ErrorMsg key="35044" value="Could not create output file."/>
+    <ErrorMsg key="35045" value="Could not create iterator to write to output file."/>
+    <ErrorMsg key="35046" value="Error: No valid stations found."/>
+    <ErrorMsg key="35047" value="Output filename verification failure."/>
+    <ErrorMsg key="35048" value="Interpolation Data range is invalid."/>
+    <ErrorMsg key="35049" value="Input file count is zero."/>
+    <ErrorMsg key="35050" value="Input file data format is invalid."/>
+    <ErrorMsg key="35051" value="Input file name is invalid."/>
+    <ErrorMsg key="35052" value="Input ZIP file does not contain a valid input file format."/>
+    <ErrorMsg key="35053" value="No data columns have been selected in the Input file."/>
+    <ErrorMsg key="35054" value="Input file X or Y field index is invalid."/>
+    <ErrorMsg key="35055" value="Output file name is invalid."/>
+    <ErrorMsg key="35056" value="Output file raster format is invalid."/>
+    <ErrorMsg key="35057" value="Output file defined data type count is zero."/>
+    <ErrorMsg key="35058" value="Output file defined data type is invalid."/>
+    <ErrorMsg key="35059" value="Output file coordinate system is invalid."/>
+    <ErrorMsg key="35060" value="Geometry cell size is invalid."/>
+    <ErrorMsg key="35061" value="Triangulation patch multiplier is invalid."/>
+    <ErrorMsg key="35062" value="Triangulation longest triangle is invalid."/>
+    <ErrorMsg key="35063" value="Inverse Distance Weighted work data type invalid."/>
+    <ErrorMsg key="35064" value="Inverse Distance Weighted radius X is invalid."/>
+    <ErrorMsg key="35065" value="Inverse Distance Weighted radius Y is invalid."/>
+    <ErrorMsg key="35066" value="Distance radius X is invalid."/>
+    <ErrorMsg key="35067" value="Distance radius Y is invalid."/>
+    <ErrorMsg key="35068" value="Density radius X is invalid."/>
+    <ErrorMsg key="35069" value="Density radius Y is invalid."/>
+    <ErrorMsg key="35070" value="Stamp method is invalid."/>
+    <ErrorMsg key="35071" value="Minimum Curvature radius is invalid."/>
+    <ErrorMsg key="35072" value="Control file name is invalid."/>
+    <ErrorMsg key="35073" value="An X/Y/Data column index is invalid."/>
+    <ErrorMsg key="35074" value="Error: Raster driver capabilities were not retrieved."/>
+    <ErrorMsg key="35075" value="Near or Far clipping parameter invalid, must be 1 or greater."/>
+    <ErrorMsg key="35076" value="Invalid ASCII file format."/>
+    <ErrorMsg key="35077" value="Coordinate conditioning parameters are invalid."/>
+    <ErrorMsg key="35078" value="LASZip dll was not loaded."/>
+    <ErrorMsg key="35079" value="An error occurred reading the LASZip file."/>
+    <ErrorMsg key="35080" value="Nearest Neighbour maximum search distance should be greater than 0."/>
+    <ErrorMsg key="35081" value="Natural Neighbour Integration maximum search distance should be greater than 0."/>
+    <ErrorMsg key="35082" value="Natural Neighbour Integration Gaussian range should be greater than 0."/>
+    <ErrorMsg key="35083" value="Error: Failed to create temporary file."/>
+    <ErrorMsg key="35084" value="Error: Failed to create raster file."/>
+    <ErrorMsg key="35085" value="Error: No point cache."/>
+    <ErrorMsg key="35086" value="Error: Failed to begin iterator."/>
+    <ErrorMsg key="35087" value="Error: Failed to acquire raster access."/>
+    <ErrorMsg key="35088" value="Error: Iterator failed."/>
+    <ErrorMsg key="35089" value="An unexpected failure occurred: %s."/>
+    <ErrorMsg key="35090" value="An unexpected failure occurred."/>
+    <ErrorMsg key="35091" value="Near or Far clipping parameter invalid, must be greater than 0."/>
+    <ErrorMsg key="35092" value="Near or Far clipping parameter invalid, Near must be less than Far."/>
+    <ErrorMsg key="40001" value="Failed to classify grid."/>
+    <ErrorMsg key="40002" value="Invalid Number of Bins specified."/>
+    <ErrorMsg key="40003" value="Invalid classification type. Reclassify operation not allowed."/>
+    <ErrorMsg key="40004" value="Input Classified Grid Table format doesn't match GRC format."/>
+    <ErrorMsg key="40005" value="Select at least one statistics attribute."/>
+    <ErrorMsg key="40006" value="The classification info range is incorrect, lower bound greater than or equal to upper bound."/>
+    <ErrorMsg key="40007" value="Required class name missing from input or output classification info."/>
+    <ErrorMsg key="40008" value="Output class value is out of range. Maximum allowed value is 65535."/>
+    <ErrorMsg key="40009" value="Duplicate input class value are not allowed."/>
+    <ErrorMsg key="40010" value="Unable to create output Tab file."/>
+    <ErrorMsg key="40011" value="No line objects found in input vector file."/>
+    <ErrorMsg key="40012" value="CSYS is Null in Input vector and raster"/>
+    <ErrorMsg key="40013" value="No point objects found in Input vector file."/>
+    <ErrorMsg key="40014" value="No polygon objects found in Input vector file."/>
+    <ErrorMsg key="40015" value="Unit code is not a valid spatial unit code."/>
+    <ErrorMsg key="40016" value="The classification ranges are overlapping."/>
+    <ErrorMsg key="40017" value="Vector file modification failure."/>
+    <ErrorMsg key="40018" value="Source origin not over a valid cell, so height cannot be determined."/>
+    <ErrorMsg key="40019" value="Destination origin not over a valid cell, so height cannot be determined."/>
+    <ErrorMsg key="40020" value="Raster's horizontal unit code must be same."/>
+    <ErrorMsg key="40021" value="Raster's vertical unit code must be same."/>
+    <ErrorMsg key="40022" value="Not able to deduce the output unit, define a valid output unit."/>
+  
+  </ErrorMsgs>
+  
+  <ProgressMsgs>
+    <Msg key="40506" value="User has paused the operation."/>
+    <Msg key="40507" value="User has resumed the operation."/>
+    <Msg key="40508" value="User has stopped the operation."/>
+    <Msg key="40509" value="User has started the operation."/>
+    <Msg key="40510" value="User has canceled the operation, cancellation is in progress..."/>
+    <Msg key="40511" value="Waiting for user authorization to proceed..."/>
+    <Msg key="40515" value="Connected to open raster."/>
+    <Msg key="40516" value="Failed to create a raster cache."/>
+    <Msg key="40517" value="Resample operation started."/>
+    <Msg key="40518" value="Writing output file."/>
+    <Msg key="40519" value="Convert operation started."/>
+    <Msg key="40520" value="Opening file %s."/>
+    <Msg key="40521" value="File %s opened successfully."/>
+    <Msg key="40522" value="Computing statistics for band %d."/>
+    <Msg key="40523" value="Computing statistics for field %d  - all bands."/>
+    <Msg key="40524" value="Updating overviews."/>
+    <Msg key="40525" value="Started creating PERC file %s."/>
+    <Msg key="40526" value="Finished creating PERC file %s."/>
+    <Msg key="40527" value="Started creating PPRC file %s."/>
+    <Msg key="40528" value="Finished creating PPRC file %s."/>
+    <Msg key="40529" value="Started creating TPRC file."/>
+    <Msg key="40530" value="Finished creating TPRC file."/>
+    <Msg key="40531" value="Started copying to MRR cache."/>
+    <Msg key="40532" value="Finished copying to MRR cache."/>
+    <Msg key="40533" value="Started copying from MRR cache."/>
+    <Msg key="40534" value="Finished copying from MRR cache."/>
+    <Msg key="40535" value="Updating overviews %d%% completed."/>
+    <Msg key="40536" value="Computing statistics %d%% completed."/>
+    <Msg key="40537" value="Copying to MRR cache %d%% completed."/>
+    <Msg key="40538" value="Copying from MRR cache %d%% completed."/>
+    <Msg key="40539" value="Convert operation started."/>
+    <Msg key="40540" value="Convert operation %d%% completed."/>
+    <Msg key="40541" value="Computing statistics for band %d completed."/>
+    <Msg key="40542" value="Computing statistics for all bands completed."/>
+    <Msg key="40543" value="Updating overviews completed."/>
+    <Msg key="40544" value="Writing cached tiles to disk."/>
+    <Msg key="40545" value="Writing cached tiles to disk %d%% completed."/>
+    <Msg key="40546" value="Writing cached tiles to disk completed."/>
+    <Msg key="40547" value="Reproject operation started."/>
+    <Msg key="40548" value="Convert operation completed successfully."/>
+    <Msg key="40549" value="Resample operation completed successfully."/>
+    <Msg key="40550" value="Clip operation completed successfully."/>
+    <Msg key="40551" value="Reproject operation completed successfully."/>
+    <Msg key="40552" value="Calculate operation started."/>
+    <Msg key="40553" value="Merge operation completed successfully."/>
+    <Msg key="40554" value="Copy Operation Started."/>
+    <Msg key="40555" value="Copying associated files."/>
+    <Msg key="40556" value="Copy operation completed successfully."/>
+    <Msg key="40557" value="Deleting raster file..."/>
+    <Msg key="40558" value="Deleting associated files..."/>
+    <Msg key="40559" value="Delete operation completed successfully."/>
+    <Msg key="40560" value="Running operation on total %d XBlocks %d YBlocks."/>
+    <Msg key="40561" value="Current block size dMinX=%g dMaxX=%g dMinY=%g dMaxY=%g."/>
+    <Msg key="40562" value="Region inspection started for %s"/>
+    <Msg key="40563" value="Region inspection completed for %s."/>
+    <Msg key="40564" value="Reading objects from input vector file %s."/>
+    <Msg key="40565" value="Reading cell values from input raster %s."/>
+    <Msg key="40566" value="Begin region inspection %s"/>
+    <Msg key="40567" value="End region inspection %s"/>
+    <Msg key="40568" value="Begin region statistics computation %s"/>
+    <Msg key="40569" value="End region statistics computation %s"/>
+    <Msg key="40570" value="Start reading %s vector file."/>
+    <Msg key="40571" value="Vector file reading completed."/>
+    <Msg key="40572" value="Start creating %s output vector file."/>
+    <Msg key="40573" value="Vector file creation completed."/>
+    <Msg key="40574" value="Clip operation started."/>
+    <Msg key="40575" value="Merge operation started."/>
+    <Msg key="40576" value="Classify operation started."/>
+    <Msg key="40577" value="Classify operation completed successfully."/>
+    <Msg key="40578" value="Opening files..."/>
+    <Msg key="40579" value="Creating raster file..."/>
+    <Msg key="40580" value="Pre-processing input rasters to merge..."/>
+    <Msg key="40581" value="Pre-processing raster %s"/>
+    <Msg key="40582" value="Merge pre-processing %d%% complete."/>
+    <Msg key="40583" value="Merge pre-processing of input rasters completed."/>
+    <Msg key="40584" value="Merge data processing %d%% completed."/>
+    <Msg key="40585" value="Incompatible Field type detected in the source raster %s."/>
+    <Msg key="40586" value="Incompatible Band data type detected in the source raster %s."/>
+    <Msg key="40587" value="Incompatible Band count detected in the source raster %s."/>
+    <Msg key="40588" value="Incompatible coordinate system detected in the source raster %s."/>
+    <Msg key="40589" value="Valid expression."/>
+    <Msg key="40590" value="Source rasters do not overlap."/>
+    <Msg key="40591" value="Elapsed time: %I64d s"/>
+    <Msg key="40592" value="Verifying input data sources..."/>
+    <Msg key="40593" value="Checking storage volumes and system memory. This can cause a short delay..."/>
+    <Msg key="40594" value="Volume %s [%s]: Size %I64u (%I64u MB), Free %I64u (%I64u MB)"/>
+    <Msg key="40595" value=" READ_ONLY"/>
+    <Msg key="40596" value=" COMPRESSED"/>
+    <Msg key="40597" value="Physical memory (total)	: %6I64u MB"/>
+    <Msg key="40598" value="Physical memory (available)	: %6I64u MB"/>
+    <Msg key="40599" value="Virtual memory (total)	: %6I64u MB"/>
+    <Msg key="40600" value="Virtual memory (available)	: %6I64u MB"/>
+    <Msg key="40601" value="Paging memory (total)	: %6I64u MB"/>
+    <Msg key="40602" value="Paging memory (available)	: %6I64u MB"/>
+    <Msg key="40603" value="Free physical memory is low: %6I64u MB reserved."/>
+    <Msg key="40604" value="Error: The temporary file folder %s does not exist."/>
+    <Msg key="40606" value="Checking status of input file(s)..."/>
+    <Msg key="40611" value="Failed to assign coordinate system to output."/>
+    <Msg key="40612" value="Warning: File %s is currently open for read|write by another process."/>
+    <Msg key="40613" value="Warning: Close file %s and start the process again."/>
+    <Msg key="40614" value="The output file exists and is currently open in another process.\n\n%s\n\nPlease close the file (or modify the output file name) and restart processing."/>
+    <Msg key="40615" value="Warning: File %s will be overwritten."/>
+    <Msg key="40616" value="Minimum contour level could not be supported, modified from %s to %s."/>
+    <Msg key="40617" value="Maximum contour level could not be supported, modified from %s to %s."/>
+    <Msg key="40618" value="Prepare for contouring."/>
+    <Msg key="40619" value="Preparing to contour..."/>
+    <Msg key="40620" value="Contouring extents are invalid."/>
+    <Msg key="40621" value="Contouring region from (%s,%s) to (%s,%s)"/>
+    <Msg key="40622" value="Contouring region over (%u,%u) cells of dimension (%s,%s)"/>
+    <Msg key="40623" value="Volume %s requires an estimated %I64u MB"/>
+    <Msg key="40624" value="Warning: Volume %s has insufficient storage space."/>
+    <Msg key="40625" value="Warning: Volume %s may run out of storage space."/>
+    <Msg key="40626" value="Error: Volume %s is read-only."/>
+    <Msg key="40627" value="Warning: The available physical memory is low - performance may be affected."/>
+    <Msg key="40628" value="Contouring."/>
+    <Msg key="40629" value="Generating contours..."/>
+    <Msg key="40630" value="Finalized %I64u contours with %I64u in progress and %I64u deferred..."/>
+    <Msg key="40632" value="Finalize"/>
+    <Msg key="40633" value="Finalizing contours..."/>
+    <Msg key="40634" value="Exporting"/>
+    <Msg key="40635" value="Exporting contours..."/>
+    <Msg key="40636" value="Exporting a total of %I64u contours."/>
+    <Msg key="40638" value="Multiple output contour files will be generated."/>
+    <Msg key="40639" value="A total of %d output contour files will be written."/>
+    <Msg key="40640" value="Created output file %s (%d lines and %d points)."/>
+    <Msg key="40641" value="Loaded command file: %s."/>
+    <Msg key="40642" value="Terminated..."/>
+    <Msg key="40643" value="No command line control file argument found."/>
+    <Msg key="40644" value="Failed to read supplied command file."/>
+    <Msg key="40645" value="Failed to verify input raster file."/>
+    <Msg key="40646" value="Failed to prepare for operation."/>
+    <Msg key="40647" value="Failed to execute operation."/>
+    <Msg key="40648" value="Failed to finalize operation."/>
+    <Msg key="40649" value="Failed to export."/>
+    <Msg key="40650" value="Unmanaged exception. The program has exited in an unmanaged fashion."/>
+    <Msg key="40651" value="Clearing memory and erasing temporary files..."/>
+    <Msg key="40652" value="Contour operation completed successfully."/>
+    <Msg key="40653" value="Contour operation terminated."/>
+    <Msg key="40654" value="Polygonization operation terminated."/>
+    <Msg key="40655" value="Filter operation started."/>
+    <Msg key="40656" value="Line Inspection started for %s."/>
+    <Msg key="40657" value="Line inspection completed for %s."/>
+    <Msg key="40658" value="Pre-processing input vector file..."/>
+    <Msg key="40659" value="Completed pre-processing input vector file."/>
+    <Msg key="40660" value="Rasterize operation started."/>
+    <Msg key="40661" value="Rasterize operation completed successfully."/>
+    <Msg key="40662" value="Rasterize processing %d%% complete.."/>
+    <Msg key="40663" value="Warning! coordinate system is not present in the raster file %s, assuming its coordinate system is the same as the input vector file."/>
+    <Msg key="40664" value="%d %s objects found in input vector file."/>
+    <Msg key="40665" value="Warning: Calculated distance between points is less than the base resolution cell size."/>
+    <Msg key="40666" value="Computing cross section with %f distance between points and %d total samples ..."/>
+    <Msg key="40667" value="Removing duplicate manual level %s"/>
+    <Msg key="40669" value="Computing cross section for all lines..."/>
+    <Msg key="40670" value="Cross Section operation completed successfully."/>
+    <Msg key="40671" value="Processing block %d of %d for cell indexes (%d,%d to %d,%d)"/>
+    <Msg key="40672" value="Block %d error: %s"/>
+    <Msg key="40673" value="Creating seamless table: %s"/>
+    <Msg key="40674" value="Created seamless table: %s"/>
+    <Msg key="40675" value="Number of contours removed under %f in size = %d"/>
+    <Msg key="40676" value="Grid Export operation started."/>
+    <Msg key="40677" value="Grid Export operation completed successfully."/>
+    <Msg key="40678" value="Grid Import operation started."/>
+    <Msg key="40679" value="Grid Import operation completed successfully."/>
+    <Msg key="40680" value="Viewshed operation started."/>
+    <Msg key="40681" value="Writing unprocessed tiles."/>
+    <Msg key="40682" value="Exporting contours %d%% complete."/>
+    <Msg key="40683" value="Curvature operation started."/>
+    <Msg key="40684" value="Curvature operation completed successfully."/>
+    <Msg key="40685" value="Start creating %s output raster file."/>
+    <Msg key="40686" value="Rename operation completed successfully."/>
+    <Msg key="40687" value="Slope operation started."/>
+    <Msg key="40688" value="Slope operation completed successfully."/>
+    <Msg key="40689" value="Aspect operation started."/>
+    <Msg key="40690" value="Aspect operation completed successfully."/>
+    <Msg key="40691" value="Sub-region size is too small. Suggested sub-region size is X=%d Y=%d."/>
+    <Msg key="40692" value="Calculating %d%% complete."/>
+    <Msg key="40693" value="Filtering %d%% complete."/>
+    <Msg key="40694" value="Viewshed %d%% complete."/>
+    <Msg key="40695" value="Slope %d%% complete."/>
+    <Msg key="40696" value="Aspect %d%% complete."/>
+    <Msg key="40697" value="Curvature %d%% complete."/>
+    <Msg key="40698" value="Classifying %d%% complete."/>
+    <Msg key="40699" value="Reprojecting %d%% complete."/>
+    <Msg key="40700" value="Resampling %d%% complete."/>
+    <Msg key="40701" value="Clipping %d%% complete."/>
+    <Msg key="40702" value="Creating output file %s."/>
+    <Msg key="40703" value="Calculate operation completed successfully."/>
+    <Msg key="40704" value="Viewshed operation completed successfully."/>
+    <Msg key="40705" value="Filter operation completed successfully."/>
+    <Msg key="40706" value="Point Inspection operation completed successfully."/>
+    <Msg key="40707" value="Region Inspection operation completed successfully."/>
+    <Msg key="40708" value="Line Inspection operation completed successfully."/>
+    <Msg key="40709" value="Point Inspection operation started."/>
+    <Msg key="40710" value="Region Inspection operation started."/>
+    <Msg key="40711" value="Line Inspection operation started."/>
+    <Msg key="40712" value="Cross Section operation started."/>
+    <Msg key="40713" value="Contour operation started."/>
+    <Msg key="40714" value="Import operation started."/>
+    <Msg key="40715" value="Export operation started."/>
+    <Msg key="40717" value="Delete operation started."/>
+    <Msg key="40718" value="Rename operation started."/>
+    <Msg key="40719" value="Importing %d%% complete."/>
+    <Msg key="40720" value="Point Inspection %d%% complete."/>
+    <Msg key="40721" value="Verifying compatibility of all input raster's geometry."/>
+    <Msg key="40722" value="Populating data in destination raster."/>
+    <Msg key="40723" value="Combine operation Started."/>
+    <Msg key="40724" value="Combine operation completed successfully."/>
+    <Msg key="40725" value="Non-square cells are not supported for Multi-resolution output. Choose a source Raster with non-square cells %s."/>
+    <Msg key="40726" value="Combine Raster %d%% complete."/>
+    <Msg key="40727" value="Populating data into destination raster fieldIndex: %d."/>
+
+    <Msg key="40728" value="Reading: %s."/>
+    <Msg key="40729" value="Build and verify the input data stream."/>
+    <Msg key="40730" value="Checking storage volumes and system memory. This can cause a short delay..."/>
+    <Msg key="40731" value="Volume %s [%s]: Size %I64d (%I64d MB), Free %I64d (%I64d MB)"/>
+    <Msg key="40732" value="READ_ONLY"/>
+    <Msg key="40733" value="COMPRESSED"/>
+    <Msg key="40734" value="Physical memory (total)     : %6I64d MB"/>
+    <Msg key="40735" value="Physical memory (available) : %6I64d MB"/>
+    <Msg key="40736" value="Virtual memory (total)      : %6I64d MB"/>
+    <Msg key="40737" value="Virtual memory (available)  : %6I64d MB"/>
+    <Msg key="40738" value="Paging memory (total)       : %6I64d MB"/>
+    <Msg key="40739" value="Paging memory (available)   : %6I64d MB"/>
+    <Msg key="40740" value="Checking status of input file(s)..."/>
+    <Msg key="40741" value="Verify input file failure: %s."/>
+    <Msg key="40742" value="Failed to find %s in ZIP file: %s."/>
+    <Msg key="40743" value="Failed to read ZIP file: %s."/>
+    <Msg key="40744" value="Warning: File %s has an unexpected band count (Parse string: %s)."/>
+    <Msg key="40745" value="Input stream statistics: %d sources connected, total of %I64d bytes (indicative)."/>
+    <Msg key="40746" value="Error: Band count is zero."/>
+    <Msg key="40747" value="Output raster band count: %d."/>
+    <Msg key="40748" value="Band %d: %s Type = %s."/>
+    <Msg key="40749" value="Warning: Available physical memory is low: %I64d MB reserved."/>
+    <Msg key="40750" value="Error: The temporary file folder %s does not exist."/>
+    <Msg key="40751" value="Error: The output raster file folder %s does not exist."/>
+    <Msg key="40752" value="Warning: File %s is currently open for read or write by another process."/>
+    <Msg key="40753" value="Warning: Close file %s before proceeding."/>
+    <Msg key="40754" value="The output file %s exists and is currently open in another process. Please close the file (or modify the output raster file name) and restart interpolation."/>
+    <Msg key="40755" value="Warning: File %s will be overwritten."/>
+    <Msg key="40756" value="Determine representative spatial statistics."/>
+    <Msg key="40757" value="Reading a small portion of the input data..."/>
+    <Msg key="40758" value="Warning: Data may be reordered. Cell size recommendation may be poor."/>
+    <Msg key="40759" value="Warning: Data distribution may be clustered or skewed. Cell size recommendation may be poor."/>
+    <Msg key="40760" value="Warning: Estimated point separation and cell size are widely divergent."/>
+    <Msg key="40761" value="Coordinates are UTM."/>
+    <Msg key="40762" value="Coordinates are geodetic."/>
+    <Msg key="40763" value="Estimated station separation: %.10g units."/>
+    <Msg key="40764" value="Estimated station trend direction: %.10g degrees."/>
+    <Msg key="40765" value="Raster cell size recommendation: %.10g units."/>
+    <Msg key="40766" value="Raster cell size recommendation: %.10g units (%.10g arc sec)."/>
+    <Msg key="40767" value="Parse input, determine data extents and distribution."/>
+    <Msg key="40768" value="Parsing for extents..."/>
+    <Msg key="40769" value="Parsing input extents (skipping %d)..."/>
+    <Msg key="40770" value="Parsing input extents..."/>
+    <Msg key="40771" value="Reading all input files to obtain data extents and distribution statistics..."/>
+    <Msg key="40772" value="(estimated)"/>
+    <Msg key="40773" value="Warning: Statistics are based on sub-sampled data."/>
+    <Msg key="40774" value="Total input points: %I64d %s."/>
+    <Msg key="40775" value="Total valid input points: %I64d %s."/>
+    <Msg key="40776" value="Spatial range X: (%.10g to %.10g) %.10g %s."/>
+    <Msg key="40777" value="Spatial range Y: (%.10g to %.10g) %.10g %s."/>
+    <Msg key="40778" value="Warning: Point separation statistics may be invalid."/>
+    <Msg key="40779" value="Point separation: less than or equal to %.10g (Avg : %.10g) : %I64d stations."/>
+    <Msg key="40780" value="Point separation: greater than %.10g (Avg : %.10g) : %I64d stations."/>
+    <Msg key="40781" value="Band %d range: %.10g to %.10g %s."/>
+    <Msg key="40782" value="Data coverage: Number of tiles %d occupying area %.10g."/>
+    <Msg key="40783" value="Data coverage: Number of cells %d occupying area %.10g."/>
+    <Msg key="40784" value="Data coverage: Minimum density %.10g points/unit area (Square of length %.10g units)."/>
+    <Msg key="40785" value="Data coverage: Maximum density %.10g points/unit area (Square of length %.10g units)."/>
+    <Msg key="40786" value="Data coverage: Mean density %.10g points/unit area (Square of length %.10g units)."/>
+    <Msg key="40787" value="Data coverage: Median density %.10g points/unit area (Square of length %.10g units)."/>
+    <Msg key="40788" value="Data coverage: Mode density %.10g points/unit area (Square of length %.10g units)."/>
+    <Msg key="40789" value="Prepare raster parameters."/>
+    <Msg key="40790" value="Raster size: (%d x %d) cells of size (%.10g,%.10g)."/>
+    <Msg key="40791" value="Raster extent: (%.10g %.10g) to (%.10g %.10g)."/>
+    <Msg key="40792" value="Warning: No patch coverage data available as input data was not parsed."/>
+    <Msg key="40793" value="Patch coverage: %d patches of size %d x %d cells with %d points per patch."/>
+    <Msg key="40794" value="Patch coverage: %d patches occupied (estimated) with %d points per patch."/>
+    <Msg key="40795" value="Export Source Mask."/>
+    <Msg key="40796" value="Exporting Source Mask..."/>
+    <Msg key="40797" value="Finalize raster export."/>
+    <Msg key="40798" value="Processing: un-padding raster..."/>
+    <Msg key="40799" value="Prepare to interpolate."/>
+    <Msg key="40800" value="Volume %s requires an estimated %I64u MB."/>
+    <Msg key="40801" value="Warning: Volume %s has insufficient storage space."/>
+    <Msg key="40802" value="Warning: Volume %s may run out of storage space."/>
+    <Msg key="40803" value="Error: Volume %s is read-only."/>
+    <Msg key="40804" value="Source data stamping will be performed direct to memory."/>
+    <Msg key="40805" value="Establishing data cache. This can cause a short delay..."/>
+    <Msg key="40806" value="Source data will be in memory."/>
+    <Msg key="40807" value="Source data will be in virtual memory."/>
+    <Msg key="40808" value="Patch cache size: %I64d bytes."/>
+    <Msg key="40809" value="Warning: Estimated memory usage (%I64d MB) exceeds available physical memory (%I64d MB)."/>
+    <Msg key="40810" value="Source data stamping will be performed in virtual memory."/>
+    <Msg key="40811" value="Patch size has been adjusted."/>
+    <Msg key="40812" value="Patch coverage: %d patches of size %d x %d cells with %d points per patch."/>
+    <Msg key="40813" value="Patch coverage: %d patches occupied (estimated) with %d points per patch."/>
+    <Msg key="40814" value="Up to %I64u stations will be cached per patch."/>
+    <Msg key="40815" value="Up to %d input stations will be internally cached."/>
+    <Msg key="40816" value="Patch cache: All points will be stored in memory."/>
+    <Msg key="40817" value="Establishing grid files on disk."/>
+    <Msg key="40818" value="Source data stamping will be performed in-memory."/>
+    <Msg key="40819" value="Parse input and stamp."/>
+    <Msg key="40820" value="Stamping input data..."/>
+    <Msg key="40821" value="Reading all input files and stamping to grid..."/>
+    <Msg key="40822" value="Stamped a total of %I64d grid cells: %.10g percent."/>
+    <Msg key="40823" value="Normalizing stamped data..."/>
+    <Msg key="40824" value="System error %d trying to allocate patch memory."/>
+    <Msg key="40825" value="Final minimum curvature iteration."/>
+    <Msg key="40826" value="Stamped: %I64d."/>
+    <Msg key="40827" value="Parse input and sort."/>
+    <Msg key="40828" value="Sorting input data..."/>
+    <Msg key="40829" value="Reading all input files and spatially sorting data..."/>
+    <Msg key="40830" value="Patch statistics: %d occupied patches."/>
+    <Msg key="40831" value="Patch statistics: Maximum points %d, minimum %d."/>
+    <Msg key="40832" value="Patch statistics: Median points %d."/>
+    <Msg key="40833" value="Final minimum curvature iteration."/>
+    <Msg key="40834" value="Collapsed patch from %I64d stations to %I64d unique stations."/>
+    <Msg key="40835" value="Exit"/>
+    <Msg key="40836" value=" Final change: %.10g."/>
+    <Msg key="40837" value="Flushing caches - there may a delay."/>
+    <Msg key="40838" value="Triangulation."/>
+    <Msg key="40839" value="Triangulating..."/>
+    <Msg key="40840" value="Warning: Raster cache is small - performance may be affected."/>
+    <Msg key="40841" value="Incrementally triangulating the dataset and writing to output raster."/>
+    <Msg key="40842" value="Patch row %d:"/>
+    <Msg key="40843" value=" Fully loaded"/>
+    <Msg key="40844" value="Patch triangulation attempt failed due to memory allocation failure. Trying again..."/>
+    <Msg key="40845" value=" Unloading "/>
+    <Msg key="40846" value="Patches loaded %d."/>
+    <Msg key="40847" value="Populate pyramid upwards."/>
+    <Msg key="40848" value="Changing cache status. This can cause a short delay..."/>
+    <Msg key="40849" value="Interpolating %d%% complete."/>
+    <Msg key="40850" value="Clip."/>
+    <Msg key="40851" value="Creating clip mask..."/>
+    <Msg key="40852" value="Near field search..."/>
+    <Msg key="40853" value="Far field search..."/>
+    <Msg key="40854" value="Focus source mask."/>
+    <Msg key="40855" value="Focusing source mask..."/>
+    <Msg key="40856" value="Populate pyramid downwards."/>
+    <Msg key="40857" value="Interpolation phase 2 (%d): "/>
+    <Msg key="40858" value="Finalize raster export."/>
+    <Msg key="40859" value="Exporting raster..."/>
+    <Msg key="40860" value="Writing raster header..."/>
+    <Msg key="40861" value="Warning: Overwriting file %s."/>
+    <Msg key="40862" value="Output header: %s."/>
+    <Msg key="40863" value="Writing raster data..."/>
+    <Msg key="40864" value="Output: %s."/>
+    <Msg key="40865" value="Writing TAB companion..."/>
+    <Msg key="40866" value="Output TAB companion: %s."/>
+    <Msg key="40867" value="Input command file: %s."/>
+    <Msg key="40868" value="Statistics: Estimating appropriate cell size."/>
+    <Msg key="40869" value="Terminated..."/>
+    <Msg key="40870" value="No command line control file argument found."/>
+    <Msg key="40871" value="Failed to read supplied command file."/>
+    <Msg key="40872" value="Failed to build input stream."/>
+    <Msg key="40873" value="Failed to parse input for statistics."/>
+    <Msg key="40874" value="Failed to parse input for extents."/>
+    <Msg key="40875" value="Failed to prepare raster extents."/>
+    <Msg key="40876" value="Failed raster export."/>
+    <Msg key="40877" value="Failed to write a final parameters command file."/>
+    <Msg key="40878" value="Failed to prepare for interpolation."/>
+    <Msg key="40879" value="Failed to stamp input data."/>
+    <Msg key="40880" value="Failed to clip."/>
+    <Msg key="40881" value="Failed first phase interpolation."/>
+    <Msg key="40882" value="Failed second phase interpolation."/>
+    <Msg key="40883" value="Failed third phase interpolation."/>
+    <Msg key="40884" value="Failed to sort input data."/>
+    <Msg key="40885" value="Failed to triangulate."/>
+    <Msg key="40886" value="Failed to focus source mask."/>
+    <Msg key="40887" value="Failed to export source mask."/>
+    <Msg key="40888" value="Statistics complete."/>
+    <Msg key="40889" value="Statistics terminated."/>
+    <Msg key="40890" value="Gridding operation started."/>
+    <Msg key="40891" value="Gridding: Stamped minimum curvature."/>
+    <Msg key="40892" value="Gridding: Minimum curvature."/>
+    <Msg key="40893" value="Gridding: Delaunay triangulation with linear interpolation."/>
+    <Msg key="40894" value="Gridding: Stamped inverse distance."/>
+    <Msg key="40895" value="Gridding: Stamped data density."/>
+    <Msg key="40896" value="Gridding: Stamped data distance."/>
+    <Msg key="40897" value="Processing: Raster Padding."/>
+    <Msg key="40898" value="Processing: Raster Unpadding."/>
+    <Msg key="40899" value="Gridding: Grid stamp."/>
+    <Msg key="40900" value="Clearing memory and erasing temporary files..."/>
+    <Msg key="40901" value="Interpolation operation completed successfully."/>
+    <Msg key="40902" value="Interpolation operation terminated."/>
+    <Msg key="40903" value="Failed to read file: %s."/>
+    <Msg key="40904" value="Error triggered by %s: %s"/>
+    <Msg key="40905" value="Could not open file %s."/>
+    <Msg key="40906" value="File does not appear to be in a recognized LAS format."/>
+    <Msg key="40907" value="Interpolation phase 1..."/>
+    <Msg key="40908" value="Interpolation phase 2..."/>
+    <Msg key="40909" value="Interpolation phase 3..."/>
+    <Msg key="40909" value="Interpolation phase 3..."/>
+    <Msg key="40910" value="Output File %s exists."/>
+    <Msg key="40911" value="Input vector File Path: %s."/>
+    <Msg key="40912" value="Input Source File Path [%d]: %s."/>
+    <Msg key="40913" value="Output vector File Path: %s."/>
+    <Msg key="40914" value="Operation going to be performed: %s."/>
+    <Msg key="40915" value="CoordSys not present in input file, Using CoordSys supplied by user."/>
+    <Msg key="40916" value="Input polygon world space clip bounds MinX: %g MaxX: %g MinY: %g MaxY: %g."/>
+    <Msg key="40917" value="Input polygon Cell space clip bounds MinX: %g MaxX: %g MinY: %g MaxY: %g."/>
+    <Msg key="40918" value="Retain Inside Polygon: %d."/>
+    <Msg key="40919" value="Not able to copy file %s to Destination Directory %s."/>
+    <Msg key="40920" value="Not able to copy file %s with extension %s to Destination Directory %s."/>
+    <Msg key="40921" value="Not able to delete file %s error code: %d."/>
+    <Msg key="40922" value="Not able to delete file %s with extension %s from Destination Directory %s."/>
+    <Msg key="40923" value="Not able to delete file %s with extension %s error code: %d."/>
+    <Msg key="40924" value="Not able to rename file %s to %s."/>
+    <Msg key="40925" value="Not able to rename file %s with extension %s to %s."/>
+    <Msg key="40926" value="Output File %s exists, exiting as overwrite flag is false."/>
+    <Msg key="40927" value="GetComputeStats: "/>
+    <Msg key="40928" value="Val: %f IsValid: %d "/>
+    <Msg key="40929" value="GridPointsValues (x,y) "/>
+    <Msg key="40930" value="Point[%g, %g] "/>
+    <Msg key="40931" value="Start Load %d/%d : "/>
+    <Msg key="40932" value="End Load %d/%d : %d"/>
+    <Msg key="40933" value="Start Process %d/%d : "/>
+    <Msg key="40934" value="End Process %d/%d : "/>
+    <Msg key="40935" value="Start Block Write %d/%d : %d"/>
+    <Msg key="40936" value="End Block Write %d/%d : "/>
+    <Msg key="40937" value="End Load %d/%d : %d %d"/>
+    <Msg key="40938" value="Starting Chunk %d/%d : "/>
+    <Msg key="40939" value="Chunk size %d/%d : "/>
+    <Msg key="40940" value="Failed AddPoly %d : "/>
+    <Msg key="40941" value="Failed Process %d : "/>
+    <Msg key="40942" value="Succeed Process %d/%d : %d/%d "/>
+    <Msg key="40943" value="Input source file path: %s."/>
+    <Msg key="40944" value="Output file path: %s."/>
+    <Msg key="40945" value="Destination driver string: %s."/>
+    <Msg key="40946" value="Finalize options delete: %d Discard: %d BuildOverViews: %d ComputeStats %d, StatsLevel %d."/>
+    <Msg key="40947" value="Operation going to be performed: %s."/>
+    <Msg key="40948" value="Source raster CoordSys: [%s]."/>
+    <Msg key="40949" value="Destination raster requested CoordSys: [%s]."/>
+    <Msg key="40950" value="OldMinX: %g OldMinY: %g OldMaxX: %g OldMaxY: %g."/>
+    <Msg key="40951" value="NewCellSize: %g nNewColumns: %d nNewRows: %d NewMinX: %g NewMinY: %g NewMaxX: %g NewMaxY: %g."/>
+    <Msg key="40952" value="Deleted %s."/>
+    <Msg key="40953" value="Error: The output raster file name %s is invalid. The filename is blank."/>
+
+    <Msg key="40954" value="Polygonization operation started."/>
+    <Msg key="40955" value="Polygonization operation completed successfully."/>
+
+    <Msg key="40956" value="Exporting %d%% complete."/>
+    <Msg key="40957" value="Stamping %d%% complete."/>
+
+    <Msg key="40958" value="Compute histogram."/>
+    <Msg key="40959" value="Compute basic univariate statistics."/>
+    <Msg key="40960" value="Compute skewness statistics."/>
+    <Msg key="40961" value="Compute basic bivariate statistics."/>
+    <Msg key="40962" value="Compute correlation statistics."/>
+    <Msg key="40963" value="Compute rank statistics."/>
+    <Msg key="40964" value="Compute expectation statistics."/>
+    <Msg key="40965" value="Compute basic multivariate statistics."/>
+    <Msg key="40966" value="Compute first order surface fit."/>
+    <Msg key="40967" value="Source raster: %s."/>
+    <Msg key="40968" value="Source raster format: %s."/>
+    <Msg key="40969" value="Source raster size %I64d x %I64d (total of %I64d cells)."/>
+    <Msg key="40970" value="Source raster cell size %.10g x %.10g."/>
+    <Msg key="40971" value="Identified %d raster source files for joining."/>
+    <Msg key="40972" value="Validated %d raster source files for joining."/>
+    <Msg key="40973" value="Process failed."/>
+    <Msg key="40974" value="Process complete."/>
+    <Msg key="40975" value="Process terminated."/>
+    <Msg key="40976" value="Generating polygons..."/>
+    <Msg key="40977" value="Preparing to polygonise..."/>
+    <Msg key="40978" value="Finalized %I64u polygons with %I64u in progress and %I64u deferred..."/>
+    <Msg key="40979" value="Finalising polygons..."/>
+    <Msg key="40980" value="Exporting polygons..."/>
+    <Msg key="40981" value="Exporting polygons %d%% complete."/>
+    <Msg key="40982" value="Determining output file names."/>
+    <Msg key="40983" value="Determining output file names complete."/>
+    <Msg key="40984" value="Determining output file names terminated."/>
+    <Msg key="40985" value="Renaming %s and associated files."/>
+    <Msg key="40986" value="Deleting %s and associated files."/>
+    <Msg key="40987" value="Copying %s and associated files."/>
+    <Msg key="40988" value="Creating copy of input vector with additional columns."/>
+    <Msg key="40989" value="Modifying records in output vector."/>
+    <Msg key="40990" value="Export to TAB file operation is completed."/>
+    <Msg key="40991" value="Export to TAB %d%% complete."/>
+    <Msg key="40992" value="%s operation started."/>
+    <Msg key="40993" value="%s operation ended."/>
+    <Msg key="40994" value="%s operation completed successfully."/>
+    <Msg key="40995" value="Line of sight"/>
+    <Msg key="40996" value="Generating %d sample points between view points."/>
+    <Msg key="40997" value="Export to ASCII %d%% complete."/>
+    <Msg key="40998" value="Raster volume"/>
+    <Msg key="40999" value="Computing Volume of the raster against secondary raster %s."/>
+    <Msg key="41000" value="Computing Volume of the raster against constant plane %f."/>
+    <Msg key="41001" value="Operation may fail because of insufficient memory to Run."/>
+    <Msg key="41002" value="TAB file creation will fail because of size restriction. Setting it to Extended TAB format."/>
+    <Msg key="41003" value="Failed to get Color Information for this Raster."/>
+    <Msg key="41004" value="Computed volume is %.4f and cell count is %llu."/>
+    <Msg key="41005" value="Gridding: Nearest Neighbour."/>
+    <Msg key="41006" value="Gridding: Natural Neighbour by Integration."/>
+    <Msg key="41007" value="Clip raster to raster"/>
+    <Msg key="41010" value="Coincident point analysis."/>
+    <Msg key="41011" value="Found %llu points coincident and %llu eliminated."/>
+    <Msg key="41012" value="Declare output raster tiles."/>
+    <Msg key="41013" value="Grid by nearest neighbour."/>
+    <Msg key="41014" value="Grid by stamping."/>
+    <Msg key="41015" value="Populate by distance."/>
+    <Msg key="41016" value="Populate Voronoi tesselation."/>
+    <Msg key="41017" value="Grid by natural neighbour (integration)."/>
+    <Msg key="41018" value="Gridding %d%% complete."/>
+  </ProgressMsgs>
+</RasterSDK>
